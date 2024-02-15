@@ -99,7 +99,6 @@ def cos_sim_toxic(model_id, df ,gradient_norms_compare, minus_row, minus_col):
     precision = precision_score(true_labels, predicted_labels)
     recall = recall_score(true_labels, predicted_labels)
 
-    # 计算F1分数
     f1 = f1_score(true_labels, predicted_labels)
     print("Precision:", precision)
     print("Recall:", recall)
@@ -114,5 +113,5 @@ def cos_sim_toxic(model_id, df ,gradient_norms_compare, minus_row, minus_col):
 if __name__ == "__main__":
     for model_id in ['./model/Llama-2-7b-chat-hf']:
         gradient_norms_compare, minus_row_cos, minus_col_cos =  find_critical_para(model_id)
-        df = pd.read_csv('/home/yueqi/GradSafe-kk/ToxicChat/sampled_data.csv')
+        df = pd.read_csv('./data/toxic-chat/toxic-chat_annotation_test.csv')
         auprc, f1 = cos_sim_toxic(model_id, df,gradient_norms_compare, minus_row_cos, minus_col_cos)
