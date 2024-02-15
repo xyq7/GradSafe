@@ -100,7 +100,6 @@ def cos_sim_xstest(model_id, df ,gradient_norms_compare,  minus_row, minus_col):
     precision = precision_score(true_labels, predicted_labels)
     recall = recall_score(true_labels, predicted_labels)
 
-    # 计算F1分数
     f1 = f1_score(true_labels, predicted_labels)
     print("Precision:", precision)
     print("Recall:", recall)
