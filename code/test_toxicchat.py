@@ -16,7 +16,7 @@ from sklearn.metrics import precision_recall_curve, auc
 import itertools
 from find_critical_parameters import find_critical_para, load_model
 
-def cos_sim_toxic(model_id, df ,gradient_norms_compare, minus_row, minus_col,cnt):
+def cos_sim_toxic(model_id, df ,gradient_norms_compare, minus_row, minus_col):
     columns = df[['user_input', 'toxicity']]
     model, tokenizer = load_model(model_id)
     
