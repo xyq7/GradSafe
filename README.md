@@ -1,4 +1,6 @@
 # GradSafe
+Official Code for ACL 2024 paper "GradSafe: Detecting Unsafe Prompts for LLMs via Safety-Critical Gradient Analysis"
+https://arxiv.org/abs/2402.13494
 
 ## Overview
 Large Language Models (LLMs) face threats from unsafe prompts.
