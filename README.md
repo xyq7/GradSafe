@@ -1,5 +1,5 @@
 # GradSafe
-Official Code for ACL 2024 paper "GradSafe: Detecting Unsafe Prompts for LLMs via Safety-Critical Gradient Analysis"
+Official Code for ACL 2024 paper "GradSafe: Detecting Jailbreak Prompts for LLMs via Safety-Critical Gradient Analysis"
 https://arxiv.org/abs/2402.13494
 
 ## Overview
@@ -32,5 +32,17 @@ Evaluate the performance of GradSafe on two dataset:
 
 > python ./code/test_toxicchat.py
 
+## Citation
+
+If you find this work useful for your research, please cite:
+```
+@inproceedings{xie2024gradsafe,
+  title={GradSafe: Detecting Jailbreak Prompts for LLMs via Safety-Critical Gradient Analysis},
+  author={Xie, Yueqi and Fang, Minghong and Pi, Renjie and Gong, Neil},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={507--518},
+  year={2024}
+}
+```
 
 
